@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
 import "../style/header.css";
 import logo from "../assets/isepToken.png";
+import React, { useState, useEffect } from "react";
 
 
 function Header() {
