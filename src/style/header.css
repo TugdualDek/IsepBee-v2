@@ -29,6 +29,16 @@
   border-radius: 36px;
 }
 
+.btn-header {
+  display: block;
+}
+
+@media screen and (max-width: 500px) {
+  .btn-header {
+    display: none; 
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .logo_image {
     animation: App-logo-spin infinite 20s linear;

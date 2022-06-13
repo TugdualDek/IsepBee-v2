@@ -2,3 +2,7 @@
   background-color: #0d0d2b;
   display: block;
 }
+
+html {
+  scroll-behavior: smooth;
+}
