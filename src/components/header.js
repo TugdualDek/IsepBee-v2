@@ -6,7 +6,6 @@ function Header() {
   return (
     <div className="header">
       <div>
-        <a href="">
           <img
             src={logo}
             width="75"
@@ -14,7 +13,6 @@ function Header() {
             alt="Logo"
             className="logo_image"
           />
-        </a>
       </div>
       <div className="navBar">
         <a href="#about">About</a>

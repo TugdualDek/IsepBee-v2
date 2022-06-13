@@ -1,22 +1,45 @@
 .header {
-  width: 100%;
+  width: 90%;
   height: 100px;
-  color: #f1f1f1;
   display: flex;
-  position: relative;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header :nth-child(1) {
-  justify-content: flex-start;
+  margin-left: 7.5%;
 }
 
-.header :nth-child(2) {
-  justify-content: flex-end;
-}
-
-.navbar {
+.navBar {
+  width: 60%;
+  min-width: 350px;
   display: flex;
-  text-align: center;
-  margin-right: 0;
-  justify-content: flex-end;
+  justify-content: space-between;
+  padding-right: 2.5%;
+}
+
+.navBar a {
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+.logo_image {
+  border: 1px solid white;
+  border-radius: 36px;
+}
+
+@media (prefered-reduced-motion: no-preference) {
+  .logo_image {
+    animation: App-logo-spin infinite 20s linear;
+  }  
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
