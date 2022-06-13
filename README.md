@@ -18,5 +18,6 @@ To run the project :
 
 These are the dependencies : 
 
+- React.js
 - Recharts
 - Victory Charts
