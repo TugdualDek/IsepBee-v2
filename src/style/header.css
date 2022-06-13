@@ -29,7 +29,7 @@
   border-radius: 36px;
 }
 
-@media (prefered-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) {
   .logo_image {
     animation: App-logo-spin infinite 20s linear;
   }  
