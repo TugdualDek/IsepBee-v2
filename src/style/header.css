@@ -47,23 +47,26 @@
     display: block; 
   }
 
-  .navbar {
+  .navBar-open {
+    display: flex;
     flex-direction: column;
-    height: 200px;
   }
 
-  .items-navBar :nth-child(1){
-    border-top: 1px solid #fff;
-    margin-top: 50px;
-  }
-
-  .items-navBar {
-    height: 50px;
+  .items-navBar-open {
+    border: 1px solid white;
     width: 100%;
-    border-bottom: 1px solid #fff;
-    line-height: 50px;
   }
 
+}
+
+@media screen and (min-width: 501px) {
+  .navBar-open {
+    display: none;
+  }
+  
+  .items-navBar-open {
+    display: none;
+  }  
 }
 
 @media (prefers-reduced-motion: no-preference) {
