@@ -23,6 +23,12 @@ function Header() {
     console.log(isOpen);
     setOpen(!isOpen);
   }
+
+  useEffect(() =>{
+    if(isOpen && width >=500){setOpen(false)} 
+    },[width]
+    )
+
   return (
     <div className="header">
       <div>
@@ -43,14 +49,14 @@ function Header() {
             <a className="items-navBar" href="#contact">Contact</a>
         </div>}
       {width < 500 && <button onClick={() => btnFunction() } className="btn-header">CQFD</button>}
-      {isOpen && (
+      {(isOpen && (
         <div className="navBar-open">
           <a className="items-navBar-open" href="#about">About</a>
           <a className="items-navBar-open" href="#ourgoal">Our goal</a>
           <a className="items-navBar-open" href="#whitepaper">Whitepaper</a>
           <a className="items-navBar-open" href="#roadmap">Roadmap</a>
           <a className="items-navBar-open" href="#contact">Contact</a>
-        </div>)
+        </div>))
       }
     </div>
   );
