@@ -4,33 +4,6 @@ import React, { useState, useEffect } from "react";
 
 
 function Header() {
-    const [toggleMenu, setToggleMenu] = useState(false);
-    
-    const [largeur, setLargeur] = useState(window.innerWidth);
-
-    const toggleNavSmallScreen = () => {
-      setToggleMenu(!toggleMenu);
-    }
-    
-
-useEffect (() => {
-
-    const changeWidth = () => {
-        setLargeur(window.innerWidth);
-
-        if(window.innerWidth > 500){
-            setToggleMenu(false);
-        }
-    }
-
-    window.addEventListener('resize', changeWidth);
-
-    return () => {
-        window.removeEventListener('resize', changeWidth);
-    }
-}
-)
-
   return (
     <div className="header">
       <div>
@@ -42,18 +15,45 @@ useEffect (() => {
             className="logo_image"
           />
       </div>
-      {(toggleMenu || largeur > 500) && (
         <div className="navBar">
-            <a href="#about">About</a>
-            <a href="#ourgoal">Our goal</a>
-            <a href="#whitepaper">Whitepaper</a>
-            <a href="#roadmap">Roadmap</a>
-            <a href="#contact">Contact</a>
+            <a className="items-navBar" href="#about">About</a>
+            <a className="items-navBar" href="#ourgoal">Our goal</a>
+            <a className="items-navBar" href="#whitepaper">Whitepaper</a>
+            <a className="items-navBar" href="#roadmap">Roadmap</a>
+            <a className="items-navBar" href="#contact">Contact</a>
         </div>
-      )}
-      <button onClick={toggleNavSmallScreen} className="btn-header">CQFD</button>
+      <button className="btn-header">CQFD</button>
     </div>
   );
 }
 
 export default Header;
+
+// CODE USELESS POUR L'INSTANT A SUPPRIMER SI CA MARCHE
+
+// const [toggleMenu, setToggleMenu] = useState(false);
+    
+// const [largeur, setLargeur] = useState(window.innerWidth);
+
+// const toggleNavSmallScreen = () => {
+//   setToggleMenu(!toggleMenu);
+// }
+
+
+// useEffect (() => {
+
+// const changeWidth = () => {
+//     setLargeur(window.innerWidth);
+
+//     if(window.innerWidth > 500){
+//         setToggleMenu(false);
+//     }
+// }
+
+// window.addEventListener('resize', changeWidth);
+
+// return () => {
+//     window.removeEventListener('resize', changeWidth);
+// }
+// }
+// )

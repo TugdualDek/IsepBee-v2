@@ -7,7 +7,7 @@
 }
 
 .header :nth-child(1) {
-  margin-left: 7.5%;
+  margin-left: 2.5%;
 }
 
 .navBar {
@@ -15,7 +15,16 @@
   min-width: 350px;
   display: flex;
   justify-content: space-between;
-  padding-right: 2.5%;
+  position: relative;
+}
+
+.items-navBar {
+  color: #fff;
+  cursor: pointer;
+}
+
+.navBar :nth-child(2) {
+  margin-right: 0px;
 }
 
 .navBar a {
@@ -30,13 +39,31 @@
 }
 
 .btn-header {
-  display: block;
+  display: none;
 }
 
 @media screen and (max-width: 500px) {
   .btn-header {
-    display: none; 
+    display: block; 
   }
+
+  .navbar {
+    flex-direction: column;
+    height: 200px;
+  }
+
+  .items-navBar :nth-child(1){
+    border-top: 1px solid #fff;
+    margin-top: 50px;
+  }
+
+  .items-navBar {
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    line-height: 50px;
+  }
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
