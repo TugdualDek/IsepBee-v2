@@ -43,18 +43,50 @@
 }
 
 @media screen and (max-width: 500px) {
+  .header {
+    display:block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
   .btn-header {
     display: block; 
+    position: absolute;
+    right: 10px;
+    top: 10px;
   }
 
   .navBar-open {
     display: flex;
     flex-direction: column;
+    width: 100%;
+  }
+
+  .navBar-open :nth-child(1) {
+    border-top: 1px solid purple;
+    margin-top: 13px;
   }
 
   .items-navBar-open {
-    border: 1px solid white;
-    width: 100%;
+    border-bottom: 1px solid purple;
+    height: 50px;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header :nth-child(1) {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin-left: 0px;
+  }
+
+  .logo_image {
+    margin-top: 10px;
   }
 
 }
