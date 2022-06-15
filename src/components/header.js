@@ -41,13 +41,13 @@ function Header() {
           />
       </div>
         {width > 500 && 
-        <div className="navBar">
+          <div className="navBar">
             <a className="items-navBar" href="#about">About</a>
             <a className="items-navBar" href="#ourgoal">Our goal</a>
             <a className="items-navBar" href="#whitepaper">Whitepaper</a>
             <a className="items-navBar" href="#roadmap">Roadmap</a>
             <a className="items-navBar" href="#contact">Contact</a>
-        </div>}
+          </div>}
       {width < 500 && <button onClick={() => btnFunction() } className="btn-header">CQFD</button>}
       {(isOpen && (
         <div className="navBar-open">
