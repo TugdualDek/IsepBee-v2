@@ -48,7 +48,7 @@ function Header() {
             <a className="items-navBar" href="#roadmap">Roadmap</a>
             <a className="items-navBar" href="#contact">Contact</a>
           </div>}
-      {width < 500 && <button onClick={() => btnFunction() } className="btn-header">CQFD</button>}
+      {width <= 500 && <button onClick={() => btnFunction() } className="btn-header">CQFD</button>}
       {(isOpen && (
         <div className="navBar-open">
           <a className="items-navBar-open" href="#about">About</a>
