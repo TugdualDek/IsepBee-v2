@@ -49,7 +49,7 @@ function Header() {
             <a className="items-navBar" href="#contact">Contact</a>
           </div>}
       {width <= 500 && 
-        <button onClick={() => btnFunction() } className="navbar-burger">
+        <button onClick={() => btnFunction() } className={`${isOpen? "navbar-burger-open" : "navbar-burger"}`}>
           <span className="burger-bar"></span>   
         </button>}
       {(isOpen && (
