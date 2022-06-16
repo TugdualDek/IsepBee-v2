@@ -46,6 +46,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; */
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
 }
 
 .burger-bar, 
@@ -86,7 +89,7 @@
     display: block; 
     position: absolute;
     right: 20px;
-    top: 45px;
+    top: 30px;
     width: 40px;
     padding: 0;
     border-width: 0;
