@@ -1,0 +1,12 @@
+.title {
+  display: flex;
+  z-index: 1;
+}
+
+.mainText {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 2em;
+  width: 400px;
+}

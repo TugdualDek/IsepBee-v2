@@ -15,52 +15,79 @@ function Header() {
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(getWindowDimensions()));
     return () =>
-    window.removeEventListener("resize", () => setWidth(getWindowDimensions()));
-  }
-  )
+      window.removeEventListener("resize", () =>
+        setWidth(getWindowDimensions())
+      );
+  });
 
   function btnFunction() {
     console.log(isOpen);
     setOpen(!isOpen);
   }
 
-  useEffect(() =>{
-    if(isOpen && width >=500){setOpen(false)} 
-    },[width]
-    )
+  useEffect(() => {
+    if (isOpen && width >= 500) {
+      setOpen(false);
+    }
+  }, [width]);
 
   return (
     <div className="header">
       <div className="header-img">
-          <img
-            src={logo}
-            width="75"
-            height="75"
-            alt="Logo"
-            className="logo_image"
-          />
+        <img
+          src={logo}
+          width="75"
+          height="75"
+          alt="Logo"
+          className="logo_image"
+        />
       </div>
-        {width > 500 && 
-          <div className="navBar">
-            <a className="items-navBar" href="#about">About</a>
-            <a className="items-navBar" href="#ourgoal">Our goal</a>
-            <a className="items-navBar" href="#whitepaper">Whitepaper</a>
-            <a className="items-navBar" href="#roadmap">Roadmap</a>
-            <a className="items-navBar" href="#contact">Contact</a>
-          </div>}
-      {width <= 500 && 
-        <button onClick={() => btnFunction() } className={`${isOpen? "navbar-burger-open" : "navbar-burger"}`}>
-          <span className="burger-bar"></span>   
-        </button>}
-      {(isOpen && (
+      {width > 500 && (
+        <div className="navBar">
+          <a className="items-navBar" href="#about">
+            About
+          </a>
+          <a className="items-navBar" href="#ourgoal">
+            Our goal
+          </a>
+          <a className="items-navBar" href="#whitepaper">
+            Whitepaper
+          </a>
+          <a className="items-navBar" href="#roadmap">
+            Roadmap
+          </a>
+          <a className="items-navBar" href="#contact">
+            Contact
+          </a>
+        </div>
+      )}
+      {width <= 500 && (
+        <button
+          onClick={() => btnFunction()}
+          className={`${isOpen ? "navbar-burger-open" : "navbar-burger"}`}
+        >
+          <span className="burger-bar"></span>
+        </button>
+      )}
+      {isOpen && (
         <div className="navBar-open">
-          <a className="items-navBar-open" href="#about">About</a>
-          <a className="items-navBar-open" href="#ourgoal">Our goal</a>
-          <a className="items-navBar-open" href="#whitepaper">Whitepaper</a>
-          <a className="items-navBar-open" href="#roadmap">Roadmap</a>
-          <a className="items-navBar-open" href="#contact">Contact</a>
-        </div>))
-      }
+          <a className="items-navBar-open" href="#about">
+            About
+          </a>
+          <a className="items-navBar-open" href="#ourgoal">
+            Our goal
+          </a>
+          <a className="items-navBar-open" href="#whitepaper">
+            Whitepaper
+          </a>
+          <a className="items-navBar-open" href="#roadmap">
+            Roadmap
+          </a>
+          <a className="items-navBar-open" href="#contact">
+            Contact
+          </a>
+        </div>
+      )}
     </div>
   );
 }

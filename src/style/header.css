@@ -38,6 +38,10 @@
   border-radius: 36px;
 }
 
+.header-img {
+  margin-bottom: 13px;
+}
+
 .navbar-burger {
   height: 40px;
   width: 40px;
@@ -50,8 +54,8 @@
   background-color: transparent;
 }
 
-.burger-bar, 
-.burger-bar::before, 
+.burger-bar,
+.burger-bar::before,
 .burger-bar::after {
   display: block;
   width: 40px;
@@ -59,12 +63,12 @@
   position: relative;
   border-radius: 3px;
   background-color: #fff;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-.burger-bar::before, 
+.burger-bar::before,
 .burger-bar::after {
-  content: "";  
+  content: "";
   position: absolute;
   left: 0;
 }
@@ -87,14 +91,14 @@
 
 @media screen and (max-width: 500px) {
   .header {
-    display:block;
+    display: block;
     margin: 0;
     padding: 0;
     width: 100%;
   }
 
   .navbar-burger {
-    display: block; 
+    display: block;
     position: absolute;
     right: 20px;
     top: 30px;
@@ -104,7 +108,7 @@
   }
 
   .navbar-burger-open {
-    display: block; 
+    display: block;
     position: absolute;
     right: 20px;
     top: 30px;
@@ -117,11 +121,12 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    background-color: #fff;
+    z-index: 2;
   }
 
   .navBar-open :nth-child(1) {
     border-top: 1px solid purple;
-    margin-top: 13px;
   }
 
   .items-navBar-open {
@@ -146,11 +151,10 @@
   }
 }
 
-
 @media (prefers-reduced-motion: no-preference) {
   .logo_image {
     animation: App-logo-spin infinite 20s linear;
-  }  
+  }
 }
 
 @keyframes App-logo-spin {
