@@ -125,12 +125,16 @@
     z-index: 2;
   }
 
+  .navBar-open a {
+    color: black;
+  }
+
   .navBar-open :nth-child(1) {
-    border-top: 1px solid purple;
+    border-top: 1px solid black;
   }
 
   .items-navBar-open {
-    border-bottom: 1px solid purple;
+    border-bottom: 1px solid black;
     height: 50px;
     text-decoration: none;
     align-items: center;
@@ -147,7 +151,7 @@
   }
 
   .logo_image {
-    margin-top: 10px;
+    margin-top: 13px;
   }
 }
 

@@ -32,7 +32,8 @@ function Header() {
   }, [width]);
 
   return (
-    <div className="header">
+    <div className="header" 
+    style={{marginBottom: isOpen ? 250 : 0}}>
       <div className="header-img">
         <img
           src={logo}
