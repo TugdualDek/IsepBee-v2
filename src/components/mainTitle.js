@@ -17,9 +17,7 @@ function mainTitle() {
             and Garage
           </p>
         </div>
-
         <br />
-
         <div className="main-smallText">
           <p>A solution to make money with peace of mind</p>
         </div>
