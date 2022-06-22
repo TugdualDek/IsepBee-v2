@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 import "../style/roadmap.css";
 
-function roadmap() {
+function Roadmap() {
   return (
     <div className="main-container" id="roadmap">
       <br />
@@ -58,4 +58,4 @@ function roadmap() {
   );
 }
 
-export default roadmap;
+export default Roadmap;

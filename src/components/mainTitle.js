@@ -2,7 +2,7 @@ import "../style/mainTitle.css";
 import ImageTitle from "../assets/imageTitle.js";
 import React from "react";
 
-function mainTitle() {
+function MainTitle() {
   return (
     <div className="title">
       <div className="main-textContainer">
@@ -29,4 +29,4 @@ function mainTitle() {
   );
 }
 
-export default mainTitle;
+export default MainTitle;

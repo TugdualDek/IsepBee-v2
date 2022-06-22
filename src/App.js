@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/header.js";
 import MainTitle from "./components/mainTitle.js";
 import Roadmap from "./components/roadmap.js";
+import Performance from "./components/performance";
 import React, { useState, useEffect } from "react";
 
 function getWindowDimensions() {
@@ -26,6 +27,7 @@ function App() {
       <Header />
       <MainTitle />
       <Roadmap />
+      <Performance />
     </div>
   );
 }
