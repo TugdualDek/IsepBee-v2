@@ -3,7 +3,7 @@ import "../style/wallet.css";
 
 function Wallet() {
   return (
-    <div>
+    <div className="walletContainer">
       <p className="walletTitle">Our Wallet</p>
     </div>
   );

@@ -1,3 +1,13 @@
+.walletContainer {
+  background: #2b076e;
+  padding-top: 30px;
+}
+
 .walletTitle {
   color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+  margin-block-start: 0%;
+  margin-block-end: 0%;
 }
