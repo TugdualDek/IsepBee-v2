@@ -1,4 +1,10 @@
 .performance {
+  background: rgb(13, 13, 43);
+  background: linear-gradient(
+    180deg,
+    rgba(13, 13, 43, 1) 60%,
+    rgba(43, 7, 110, 1) 90%
+  );
   text-align: center;
   color: white;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import Chart from "./chart.js";
 import "../style/performance.css";
 
 function Performance() {
@@ -10,6 +11,9 @@ function Performance() {
         We never know how the market can go, investing may leads to loss of
         money !
       </p>
+      <div>
+        <Chart />
+      </div>
     </div>
   );
 }
