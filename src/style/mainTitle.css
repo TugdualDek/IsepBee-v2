@@ -25,10 +25,15 @@
   text-align: center;
 }
 
-@media screen and (max-width: 820px){
-  .main-titleText, .main-smallText{
+@media screen and (max-width: 820px) {
+  .title {
+    justify-content: center;
+  }
+
+  .main-titleText,
+  .main-smallText {
     width: 90%;
-    text-align:left;
+    text-align: center;
   }
 
   .main-imageTitle {
