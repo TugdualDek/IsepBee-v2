@@ -33,6 +33,61 @@
   line-height: 28px;
 }
 
+.buttonWallet {
+  background-color: #3671e9;
+  width: 150px;
+  height: 60px;
+  font-size: 18px;
+  border-radius: 32px;
+  color: white;
+}
+
+.popup-box {
+  position: fixed;
+  background: #00000050;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.box {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 70vh;
+  margin-top: calc(100vh - 85vh - 20px);
+  background: linear-gradient(
+    91.89deg,
+    #ff0000 -10.21%,
+    rgba(136, 1, 1, 0.44) 115.96%
+  );
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #999;
+  overflow: auto;
+  opacity: 1;
+  background-color: white;
+}
+
+.close-icon {
+  content: "x";
+  cursor: pointer;
+  position: fixed;
+  right: calc(15% - 30px);
+  top: calc(100vh - 85vh - 33px);
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+
 @media screen and (max-width: 750px) {
   .estimationText,
   .estimationTitle {
