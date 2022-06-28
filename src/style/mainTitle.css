@@ -28,15 +28,12 @@
 @media screen and (max-width: 820px) {
   .title {
     justify-content: center;
+    flex-direction: column;
   }
 
   .main-titleText,
   .main-smallText {
     width: 100%;
     text-align: center;
-  }
-
-  .main-imageTitle {
-    display: none;
   }
 }
