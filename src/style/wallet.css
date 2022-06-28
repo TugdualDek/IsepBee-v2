@@ -33,6 +33,10 @@
   line-height: 28px;
 }
 
+.buttonEstimation {
+  width: 100%;
+}
+
 .buttonWallet {
   background-color: #3671e9;
   width: 150px;
@@ -92,5 +96,9 @@
   .estimationText,
   .estimationTitle {
     text-align: center;
+  }
+  .buttonEstimation {
+    display: flex;
+    justify-content: center;
   }
 }
