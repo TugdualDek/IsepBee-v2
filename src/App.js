@@ -2,7 +2,8 @@ import "./App.css";
 import Header from "./components/header.js";
 import MainTitle from "./components/mainTitle.js";
 import Roadmap from "./components/roadmap.js";
-import Performance from "./components/performance";
+import Performance from "./components/performance.js";
+import Wallet from "./components/wallet.js";
 import React, { useState, useEffect } from "react";
 
 function getWindowDimensions() {
@@ -28,6 +29,7 @@ function App() {
       <MainTitle />
       <Roadmap />
       <Performance />
+      <Wallet />
     </div>
   );
 }
