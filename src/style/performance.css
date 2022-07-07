@@ -15,3 +15,15 @@
 .textPerformance {
   font-size: 24px;
 }
+
+.chartPerformance {
+  width: 80%;
+  height: 500px;
+  margin-left: 7%;
+}
+
+@media screen and (max-width: 1000px) {
+  .chartPerformance {
+    height: 400px;
+  }
+}

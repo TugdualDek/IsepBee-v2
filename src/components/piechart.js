@@ -10,10 +10,10 @@ import {
 
 const Piechart = () => {
   const data = [
-    { name: "Bitcoin", students: 400, fill: "#8884d8" },
-    { name: "Ethereum", students: 700, fill: "#1af624" },
-    { name: "DogeCoin", students: 200, fill: "red" },
-    { name: "Solana", students: 1000, fill: "white" },
+    { name: "Bitcoin", students: 400, fill: "#020438" },
+    { name: "Ethereum", students: 700, fill: "#284184" },
+    { name: "DogeCoin", students: 200, fill: "#1f8ea3" },
+    { name: "Solana", students: 1000, fill: "#00eaff" },
   ];
   return (
     <PieChart width={400} height={400}>

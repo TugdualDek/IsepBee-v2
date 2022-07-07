@@ -12,6 +12,7 @@ import {
   Area,
   ResponsiveContainer,
 } from "recharts";
+import "../style/performance.css";
 
 const CustomTooltip = ({ active, payload, label }) => {
   if (active && payload && payload.length) {
@@ -148,13 +149,7 @@ const data = [
 
 export default function App() {
   return (
-    <div
-      style={{
-        width: "80%",
-        height: 300,
-        marginLeft: "7%",
-      }}
-    >
+    <div className="chartPerformance">
       <ResponsiveContainer>
         <AreaChart
           data={data}
