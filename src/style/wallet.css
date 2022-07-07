@@ -16,6 +16,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  flex-direction: row;
 }
 
 .estimationTitle {
@@ -90,6 +91,27 @@
   text-align: center;
   border: 1px solid #999;
   font-size: 20px;
+}
+
+.chartStatistique {
+  width: 40%;
+  height: 400px;
+  margin-left: 5%;
+}
+
+.statsetText {
+  color: white;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.statsTitle {
+  color: white;
+  text-align: justify;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 750px) {
