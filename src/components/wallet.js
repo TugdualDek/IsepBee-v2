@@ -4,6 +4,7 @@ import Estimation from "./estimation.js";
 import Chart from "./chartstatistique.js";
 import Statistique from "./statistique.js";
 import Tokenvalue from "./tokenvalue.js";
+import Ibepcoin from "./ibepcoin.js";
 import "../style/wallet.css";
 
 function Wallet() {
@@ -21,6 +22,7 @@ function Wallet() {
         </div>
         <div className="walletComponent3">
           <Tokenvalue />
+          <Ibepcoin />
         </div>
       </div>
     </div>
