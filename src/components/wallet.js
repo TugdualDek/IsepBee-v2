@@ -10,10 +10,14 @@ function Wallet() {
     <div className="walletContainer">
       <p className="walletTitle">Our Wallet</p>
       <div className="walletComponent">
-        <Estimation />
-        <Piechart />
-        <Chart />
-        <Statistique />
+        <div className="walletComponent1">
+          <Estimation />
+          <Piechart />
+        </div>
+        <div className="walletComponent2">
+          <Chart />
+          <Statistique />
+        </div>
       </div>
     </div>
   );

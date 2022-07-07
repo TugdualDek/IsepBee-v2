@@ -10,9 +10,26 @@
   font-size: 32px;
   margin-block-start: 0%;
   margin-block-end: 0%;
+  margin-left: 2%;
 }
 
 .walletComponent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: white;
+}
+
+.walletComponent1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-left: 2%;
+}
+
+.walletComponent2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -21,7 +38,6 @@
 
 .estimationTitle {
   text-align: justify;
-  color: white;
   font-size: 32px;
   line-height: 48px;
   font-weight: bold;
@@ -29,7 +45,6 @@
 
 .estimationText {
   text-align: justify;
-  color: white;
   font-size: 16px;
   line-height: 28px;
 }
@@ -96,31 +111,53 @@
 .chartStatistique {
   width: 40%;
   height: 400px;
-  margin-left: 5%;
 }
 
 .statsetText {
-  color: white;
   text-align: justify;
   font-size: 16px;
   line-height: 28px;
 }
 
 .statsTitle {
-  color: white;
   text-align: justify;
   font-size: 32px;
   line-height: 48px;
   font-weight: bold;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 765px) {
   .estimationText,
-  .estimationTitle {
+  .estimationTitle, 
+  .statsetText, 
+  .statsTitle {
     text-align: center;
   }
   .buttonEstimation {
     display: flex;
     justify-content: center;
   }
+
+  .walletComponent {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .walletComponent2 {
+    width: 80%;
+  }
+  
+  .chartStatistique {
+    width: 100%;
+    margin-left: -10%;
+  }
+
+  /* div.recharts-wrapper {
+    width: 100% !important;
+  }
+
+  svg.recharts-surface {
+    width: 100% !important;
+  } */
+
 }
