@@ -20,7 +20,7 @@ function Header() {
       );
   });
 
-  function btnFunction() {
+  function toggleButton() {
     console.log(isOpen);
     setOpen(!isOpen);
   }
@@ -63,7 +63,7 @@ function Header() {
       )}
       {width <= 500 && (
         <button
-          onClick={() => btnFunction()}
+          onClick={() => toggleButton()}
           className={`${isOpen ? "navbar-burger-open" : "navbar-burger"}`}
         >
           <span className="burger-bar"></span>
@@ -74,35 +74,35 @@ function Header() {
           <a
             className="items-navBar-open"
             href="#about"
-            onClick={() => btnFunction()}
+            onClick={() => toggleButton()}
           >
             About
           </a>
           <a
             className="items-navBar-open"
             href="#ourgoal"
-            onClick={() => btnFunction()}
+            onClick={() => toggleButton()}
           >
             Our goal
           </a>
           <a
             className="items-navBar-open"
             href="#whitepaper"
-            onClick={() => btnFunction()}
+            onClick={() => toggleButton()}
           >
             Whitepaper
           </a>
           <a
             className="items-navBar-open"
             href="#roadmap"
-            onClick={() => btnFunction()}
+            onClick={() => toggleButton()}
           >
             Roadmap
           </a>
           <a
             className="items-navBar-open"
             href="#contact"
-            onClick={() => btnFunction()}
+            onClick={() => toggleButton()}
           >
             Contact
           </a>

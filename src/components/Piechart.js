@@ -1,13 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { PieChart, Pie, Tooltip } from "recharts";
-
+import fakePieData from "../data/fakePieData.json";
 const Piechart = () => {
-  const data = [
-    { name: "Bitcoin", students: 400, fill: "#9E829C" },
-    { name: "Ethereum", students: 700, fill: "#05668D" },
-    { name: "DogeCoin", students: 200, fill: "#B4ADEA" },
-    { name: "Solana", students: 1000, fill: "#00eaff" },
-  ];
+  const [data, setData] = useState(fakePieData);
   return (
     <PieChart width={400} height={400}>
       <Pie
