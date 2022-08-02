@@ -10,9 +10,9 @@ import {
 
 const Piechart = () => {
   const data = [
-    { name: "Bitcoin", students: 400, fill: "#020438" },
-    { name: "Ethereum", students: 700, fill: "#284184" },
-    { name: "DogeCoin", students: 200, fill: "#1f8ea3" },
+    { name: "Bitcoin", students: 400, fill: "#9E829C" },
+    { name: "Ethereum", students: 700, fill: "#05668D" },
+    { name: "DogeCoin", students: 200, fill: "#B4ADEA" },
     { name: "Solana", students: 1000, fill: "#00eaff" },
   ];
   return (

@@ -72,19 +72,19 @@ function Header() {
       )}
       {isOpen && (
         <div className="navBar-open">
-          <a className="items-navBar-open" href="#about">
+          <a className="items-navBar-open" href="#about" onClick={() => btnFunction()}>
             About
           </a>
-          <a className="items-navBar-open" href="#ourgoal">
+          <a className="items-navBar-open" href="#ourgoal" onClick={() => btnFunction()}>
             Our goal
           </a>
-          <a className="items-navBar-open" href="#whitepaper">
+          <a className="items-navBar-open" href="#whitepaper" onClick={() => btnFunction()}>
             Whitepaper
           </a>
-          <a className="items-navBar-open" href="#roadmap">
+          <a className="items-navBar-open" href="#roadmap" onClick={() => btnFunction()}>
             Roadmap
           </a>
-          <a className="items-navBar-open" href="#contact">
+          <a className="items-navBar-open" href="#contact" onClick={() => btnFunction()}>
             Contact
           </a>
         </div>

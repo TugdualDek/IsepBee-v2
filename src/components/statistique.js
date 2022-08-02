@@ -23,12 +23,17 @@ function Statistique() {
           <Popup
             content={
               <>
-                <b>Design your Popup</b>
+                <b style={{fontSize: "20px"}}>DISCLAIMER :</b>
                 <p style={{ color: "black" }}>
                   Our past performances don’t reflect our future performances.
                   We never know how the market can go, investing may leads to
                   loss of money
                 </p>
+                <center>
+                <button style={{backgroundColor: "white", color: "black"}} className="buttonWallet" onClick={togglePopup}>
+                  I understand
+                </button>
+                </center>
               </>
             }
             handleClose={togglePopup}

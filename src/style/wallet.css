@@ -168,7 +168,18 @@
   height: 60px;
   font-size: 18px;
   border-radius: 32px;
+  border-width: 1px;
   color: white;
+}
+
+.buttonWallet:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.buttonWallet:active {
+  transform: translateY(2px);
+  -webkit-filter:brightness(90%) blur(1px);
+  filter:brightness(90%) blur(1px)
 }
 
 .popup-box {
