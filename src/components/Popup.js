@@ -1,16 +1,18 @@
 import React from "react";
 
-const Popup = (props) => {
+function Popup({ handleClose, children }) {
   return (
-    <div className="popup-box">
-      <div className="box">
-        <span className="close-icon" onClick={props.handleClose}>
+    <div className="popup-container">
+      <div className="popup-box" onClick={handleClose}></div>
+
+      <div className="box" onClick={() => {}}>
+        <div className="close-icon" onClick={handleClose}>
           x
-        </span>
-        {props.content}
+        </div>
+        {children}
       </div>
     </div>
   );
-};
+}
 
 export default Popup;
