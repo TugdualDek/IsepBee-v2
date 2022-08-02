@@ -32,8 +32,7 @@ function Header() {
   }, [width]);
 
   return (
-    <div className="header" 
-    style={{marginBottom: isOpen ? 250 : 0}}>
+    <div className="header" style={{ marginBottom: isOpen ? 250 : 0 }}>
       <div className="header-img">
         <img
           src={logo}
@@ -72,19 +71,39 @@ function Header() {
       )}
       {isOpen && (
         <div className="navBar-open">
-          <a className="items-navBar-open" href="#about" onClick={() => btnFunction()}>
+          <a
+            className="items-navBar-open"
+            href="#about"
+            onClick={() => btnFunction()}
+          >
             About
           </a>
-          <a className="items-navBar-open" href="#ourgoal" onClick={() => btnFunction()}>
+          <a
+            className="items-navBar-open"
+            href="#ourgoal"
+            onClick={() => btnFunction()}
+          >
             Our goal
           </a>
-          <a className="items-navBar-open" href="#whitepaper" onClick={() => btnFunction()}>
+          <a
+            className="items-navBar-open"
+            href="#whitepaper"
+            onClick={() => btnFunction()}
+          >
             Whitepaper
           </a>
-          <a className="items-navBar-open" href="#roadmap" onClick={() => btnFunction()}>
+          <a
+            className="items-navBar-open"
+            href="#roadmap"
+            onClick={() => btnFunction()}
+          >
             Roadmap
           </a>
-          <a className="items-navBar-open" href="#contact" onClick={() => btnFunction()}>
+          <a
+            className="items-navBar-open"
+            href="#contact"
+            onClick={() => btnFunction()}
+          >
             Contact
           </a>
         </div>

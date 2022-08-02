@@ -1,11 +1,8 @@
-import Popup from "./popup.js";
 import React, { useState } from "react";
-
+import PopUpWarningPerformance from "./PopUpWarningPerformance.js";
 function Estimation() {
   const [isOpen, setOpen] = useState(false);
-  function togglePopup() {
-    setOpen(!isOpen);
-  }
+
   return (
     <div>
       <p className="estimationTitle">Wallet Estimation</p>
@@ -15,30 +12,10 @@ function Estimation() {
         an estimation.
       </p>
       <div className="buttonEstimation">
-        <button className="buttonWallet" onClick={togglePopup}>
+        <button className="buttonWallet" onClick={() => setOpen(true)}>
           See more
         </button>
-        {isOpen && (
-          <Popup
-            content={
-              <>
-                <b style={{fontSize: "20px"}}>DISCLAIMER :</b>
-                <p style={{ color: "black" }}>
-                  Our past performances don’t reflect our future performances.
-                  We never know how the market can go, investing may leads to
-                  loss of money
-                </p>
-                <center>
-                <button style={{backgroundColor: "white", color: "black"}} className="buttonWallet" onClick={togglePopup}>
-                  I understand
-                </button>
-                </center>
-                
-              </>
-            }
-            handleClose={togglePopup}
-          />
-        )}
+        <PopUpWarningPerformance isOpen={isOpen} setOpen={setOpen} />
       </div>
     </div>
   );

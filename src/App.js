@@ -1,9 +1,9 @@
 import "./App.css";
-import Header from "./components/header.js";
-import MainTitle from "./components/mainTitle.js";
-import Roadmap from "./components/roadmap.js";
-import Performance from "./components/performance.js";
-import Wallet from "./components/wallet.js";
+import Header from "./components/Header.js";
+import MainTitle from "./components/MainTitle.js";
+import Roadmap from "./components/Roadmap.js";
+import Performance from "./components/Performance.js";
+import Wallet from "./components/Wallet.js";
 import React, { useState, useEffect } from "react";
 
 function getWindowDimensions() {
@@ -16,13 +16,13 @@ function App() {
 
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(getWindowDimensions()));
+    console.log(width);
     return () =>
       window.removeEventListener("resize", () =>
         setWidth(getWindowDimensions())
       );
   });
 
-  useEffect(() => console.log(width));
   return (
     <div className="App">
       <Header />

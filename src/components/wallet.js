@@ -1,10 +1,10 @@
 import React from "react";
-import Piechart from "./piechart.js";
-import Estimation from "./estimation.js";
-import Chart from "./chartstatistique.js";
-import Statistique from "./statistique.js";
-import Tokenvalue from "./tokenvalue.js";
-import Ibepcoin from "./ibepcoin.js";
+import Piechart from "./Piechart.js";
+import Estimation from "./Estimation.js";
+import ChartStatistique from "./ChartStatistique.js";
+import Statistique from "./Statistique.js";
+import TokenValue from "./TokenValue.js";
+import Ibepcoin from "./Ibepcoin.js";
 import "../style/wallet.css";
 
 function Wallet() {
@@ -17,11 +17,11 @@ function Wallet() {
           <Piechart />
         </div>
         <div className="walletComponent2">
-          <Chart />
+          <ChartStatistique />
           <Statistique />
         </div>
         <div className="walletComponent3">
-          <Tokenvalue />
+          <TokenValue />
           <Ibepcoin />
         </div>
       </div>

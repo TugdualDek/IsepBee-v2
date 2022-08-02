@@ -1,5 +1,5 @@
 import React from "react";
-import Chart from "./chartperformance.js";
+import ChartPerformance from "./ChartPerformance.js";
 import "../style/performance.css";
 
 function Performance() {
@@ -12,7 +12,7 @@ function Performance() {
         money !
       </p>
       <div>
-        <Chart />
+        <ChartPerformance />
       </div>
     </div>
   );

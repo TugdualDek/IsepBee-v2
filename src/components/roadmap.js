@@ -4,8 +4,6 @@ import "../style/roadmap.css";
 function Roadmap() {
   return (
     <div className="main-container" id="roadmap">
-      <br />
-      <br />
       <section className="timeline">
         <div className="timeline-line">
           <span className="line arrow-right"></span>

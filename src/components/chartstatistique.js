@@ -1,13 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import {
-  LineChart,
-  Line,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
-  Brush,
   AreaChart,
   Area,
   ResponsiveContainer,
@@ -147,7 +143,7 @@ const data = [
   },
 ];
 
-export default function App() {
+export default function ChartStatistique() {
   return (
     <div className="chartStatistique">
       <ResponsiveContainer>
