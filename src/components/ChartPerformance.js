@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   XAxis,
   YAxis,
@@ -10,10 +10,22 @@ import {
 } from "recharts";
 import "../style/performance.css";
 import CustomToolTip from "./CustomToolTip";
-import fakeData from "../data/fakeData.json";
 
 function ChartPerformance() {
-  const [data, setData] = useState(fakeData);
+  //const [data, setData] = useState(fakeData);
+  const [data, setData] = useState();
+
+  const fetchData = () => {
+    return fetch("http://127.0.0.1:3000/api/performance")
+      .then((response) => response.json())
+      .then((data) => setData(data));
+  };
+
+  console.log(data);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
   return (
     <div className="chartPerformance">
       <ResponsiveContainer>
