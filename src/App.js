@@ -25,11 +25,13 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <MainTitle />
-      <Roadmap />
-      <Performance />
-      <Wallet />
+      <div className="AppContainer">
+        <Header />
+        <MainTitle />
+        <Roadmap />
+        <Performance />
+        <Wallet />
+      </div>
     </div>
   );
 }
