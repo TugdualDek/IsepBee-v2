@@ -8,8 +8,17 @@ const Piechart = () => {
 
   const fetchData = () => {
     return fetch("http://127.0.0.1:3000/api/wallet")
-      .then((response) => response.json())
-      .then((data) => setData(data));
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error("Unable to contact the server");
+      })
+      .then((data) => setData(data))
+      .catch((error) => {
+        console.log(error);
+        setData(fakePieData);
+      });
   };
 
   console.log(data);

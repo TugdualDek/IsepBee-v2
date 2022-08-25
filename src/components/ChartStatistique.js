@@ -10,14 +10,24 @@ import {
 } from "recharts";
 import "../style/wallet.css";
 import CustomToolTip from "./CustomToolTip";
+import fakeData from "../data/fakeData.json";
 
 function ChartStatistique() {
   const [data, setData] = useState();
 
   const fetchData = () => {
     return fetch("http://127.0.0.1:3000/api/performance")
-      .then((response) => response.json())
-      .then((data) => setData(data));
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error("Unable to contact the server");
+      })
+      .then((data) => setData(data))
+      .catch((error) => {
+        console.log(error);
+        setData(fakeData);
+      });
   };
 
   console.log(data);
